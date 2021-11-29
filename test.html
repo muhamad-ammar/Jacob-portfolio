@@ -1,0 +1,961 @@
+
+    <p>Hello, I am a student in Vancouver, Canada and studying web development. In this article, I will show you "<strong>How to use basic typescript data type</strong>" and "<strong>Why we should learn typescript</strong>".</p>
+    
+    <p>JavaScript is one of the most popular programming languages.<br>
+    Because that is not strict syntax than other languages. In the other words, JavaScript is more free style language but if you meet a lot of codes in your project, that free style might be changed to pains.</p>
+    
+    <p>Please look at this code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight javascript"><code><span class="c1">// Can you guess the return value?</span>
+    <span class="kd">const</span> <span class="nx">pikachu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>Can you guess the return value of this code?<br>
+    I cannot do it. Because pikachu function can take all types of variables like string, number and so on.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight javascript"><code><span class="c1">// Arguments is number.</span>
+    <span class="kd">const</span> <span class="nx">pikachu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">pikachu</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// 2030</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight javascript"><code><span class="c1">// Arguments is string.</span>
+    <span class="kd">const</span> <span class="nx">pikachu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">pikachu</span><span class="p">(</span><span class="dl">"</span><span class="s2">2021</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">9</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// 20219</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>JavaScript is the language of dynamic typing. This is useful for writing codes more easily. But, developers have to take more care of what arguments are needed in the function, what value is returned from the function. More and More you read many codes, you realize this is stressful.</p>
+    
+    <p>On the other hands, Please look at this code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// Can you guess the return value?</span>
+    <span class="kd">const</span> <span class="nx">pikachu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="kr">number</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This is typescript code. TypeScript has static typing. When we look at this, we can probably guess pikachu function return value of <strong>number</strong>.<br>
+    This is so useful to understand codes because companies have a lot of codes and that is so complicated. <br>
+    So, we should use more readable methods because we take much time to read and understand codes which someone wrote in the past.</p>
+    <h1>
+      <a name="basic-typescript" href="#basic-typescript" class="anchor">
+      </a>
+      Basic Typescript
+    </h1>
+    
+    <p>TypeScript has some primitive data types like string, number, boolean, null, undefined and so on.</p>
+    
+    <p>This is the code of simple data types.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// string, number and boolean.</span>
+    <span class="kd">const</span> <span class="nx">caterpie01</span><span class="p">:</span> <span class="kr">number</span> <span class="o">=</span> <span class="mi">2021</span><span class="p">;</span>    <span class="c1">// OK</span>
+    <span class="kd">const</span> <span class="nx">caterpie02</span><span class="p">:</span> <span class="kr">number</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>   <span class="c1">// NG</span>
+    
+    <span class="kd">const</span> <span class="nx">Metapod01</span><span class="p">:</span> <span class="kr">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">sleepy</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// OK</span>
+    <span class="kd">const</span> <span class="nx">Metapod02</span><span class="p">:</span> <span class="kr">string</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>     <span class="c1">// NG</span>
+    
+    <span class="kd">const</span> <span class="nx">Wartortle01</span><span class="p">:</span> <span class="nx">boolean</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>  <span class="c1">// OK</span>
+    <span class="kd">const</span> <span class="nx">Wartortle02</span><span class="p">:</span> <span class="nx">boolean</span> <span class="o">=</span> <span class="mi">1111</span><span class="p">;</span>  <span class="c1">// NG</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>We get compiled errors like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight plaintext"><code>typescript.ts:10:7 - error TS2322: Type 'boolean' is not assignable to type 'number'.
+    
+    10 const caterpie02: number = false;   // NG
+             ~~~~~~~~~~
+    
+    typescript.ts:13:7 - error TS2322: Type 'boolean' is not assignable to type 'string'.
+    
+    13 const Metapod02: string = true;     // NG
+             ~~~~~~~~~
+    
+    typescript.ts:16:7 - error TS2322: Type 'number' is not assignable to type 'boolean'.
+    
+    16 const Wartortle02: boolean = 1111;  // NG
+             ~~~~~~~~~~~
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>Next, please think about data type of null and undefined.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// null and undefined.</span>
+    <span class="kd">const</span> <span class="nx">Butterfree</span><span class="p">:</span> <span class="kc">null</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">ButterfreeNull</span><span class="p">:</span> <span class="kr">string</span> <span class="o">=</span> <span class="nx">Butterfree</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ButterfreeNull</span><span class="p">)</span> <span class="c1">// null</span>
+    
+    <span class="kd">const</span> <span class="nx">Kakuna</span><span class="p">:</span> <span class="kc">undefined</span> <span class="o">=</span> <span class="kc">undefined</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">KakunaNull</span><span class="p">:</span> <span class="kr">string</span> <span class="o">=</span> <span class="nx">Kakuna</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">KakunaNull</span><span class="p">)</span> <span class="c1">//undefined</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This codes works in my environment. We can assign null and undefined value to string value.<br>
+    In this case, I did not set the strict mode. Once I did assign strict mode to true, this code works like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight plaintext"><code>typescript.ts:21:7 - error TS2322: Type 'null' is not assignable to type 'string'.
+    
+    21 const ButterfreeNull: string = Butterfree;
+             ~~~~~~~~~~~~~~
+    
+    typescript.ts:25:7 - error TS2322: Type 'undefined' is not assignable to type 'string'.
+    
+    25 const KakunaNull: string = Kakuna;
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>That is good! We can catch type error.</p>
+    
+    <p>You can set strict mode in <strong>tsconfig.json</strong> or use <strong>tsc</strong> command argument like<br>
+    <strong>--strict</strong>. If you are not sure how to set up typescript environment, please check this <a href="https://www.typescriptlang.org/download">web site</a>.</p>
+    <h1>
+      <a name="what-is-any-data-type" href="#what-is-any-data-type" class="anchor">
+      </a>
+      What is any data type?
+    </h1>
+    
+    <p>TypeScript has <strong>any</strong> data type. It allows all data types to work without type error. This is like vanilla javascript.<br>
+    Please look at this sample code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// any data type</span>
+    <span class="kd">let</span> <span class="nx">pidgey</span><span class="p">:</span> <span class="kr">any</span> <span class="o">=</span> <span class="mi">1991</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">pidgey</span><span class="p">)</span> <span class="c1">// number</span>
+    
+    <span class="nx">pidgey</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">bird</span><span class="dl">"</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">pidgey</span><span class="p">)</span> <span class="c1">// string</span>
+    
+    <span class="nx">pidgey</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">pidgey</span><span class="p">)</span> <span class="c1">// boolean</span>
+    
+    <span class="nx">pidgey</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">pidgey</span><span class="p">)</span> <span class="c1">// object</span>
+    
+    <span class="nx">pidgey</span> <span class="o">=</span> <span class="kc">undefined</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">pidgey</span><span class="p">)</span> <span class="c1">// undefined</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>pidgey variable can be received all data type!</p>
+    
+    <p>This is magical data types.🙀<br>
+    If we use any data type, we do not use TypeScript at all. We just write code by using JavaScript.</p>
+    
+    <p>TypeScript can guess data types if you do not defined that.<br>
+    we can replace above sample codes with below codes.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// typescript can guess data types.</span>
+    <span class="kd">const</span> <span class="nx">caterpie01</span><span class="p">:</span> <span class="kr">number</span> <span class="o">=</span> <span class="mi">2021</span><span class="p">;</span>     <span class="c1">// number</span>
+    <span class="kd">const</span> <span class="nx">caterpie001</span> <span class="o">=</span> <span class="mi">2021</span><span class="p">;</span>            <span class="c1">// number   - typescript guess</span>
+    
+    
+    <span class="kd">const</span> <span class="nx">Metapod01</span><span class="p">:</span> <span class="kr">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">sleepy</span><span class="dl">"</span><span class="p">;</span>  <span class="c1">// string</span>
+    <span class="kd">const</span> <span class="nx">Metapod001</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">sleepy</span><span class="dl">"</span><span class="p">;</span>         <span class="c1">// string   - typescript guess</span>
+    
+    <span class="kd">const</span> <span class="nx">Wartortle01</span><span class="p">:</span> <span class="nx">boolean</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>   <span class="c1">// boolean</span>
+    <span class="kd">const</span> <span class="nx">Wartortle001</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>           <span class="c1">// boolean  - typescript guess</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This is more readable and shorter. Of course, we cannot assign another data type to this variable.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="kd">let</span> <span class="nx">caterpie001</span> <span class="o">=</span> <span class="mi">2021</span><span class="p">;</span>            <span class="c1">// number</span>
+    <span class="nx">caterpie001</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">;</span>              <span class="c1">// type error</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>On the other hands, if we do not defined the data type of arguments in function, typescript judge the data type as <strong>any</strong>. Please check this code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="kd">const</span> <span class="nx">pikachu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">):</span> <span class="kr">number</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">pikachu</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>I got the error like this.(My environment is that strict mode is true. If you turn off strict mode, you can success compile and do not see type error)<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight plaintext"><code>typescript.ts:57:18 - error TS7006: Parameter 'a' implicitly has an 'any' type.
+    
+    57 const pikachu = (a, b): number =&gt; {
+                        ~
+    
+    typescript.ts:57:21 - error TS7006: Parameter 'b' implicitly has an 'any' type.
+    
+    57 const pikachu = (a, b): number =&gt; {
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>Because typescript cannot guess what values are received.<br>
+    So, any data type were defined by typescript. When we use function in typescript, we have to defined data types of arguments like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="kd">const</span> <span class="nx">pikachu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="kr">number</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>or<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// Do not define the return value's data type.</span>
+    <span class="kd">const</span> <span class="nx">pikachu</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="kr">number</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>If you create function with typescript, you absolutely have to define the specific data type. I recommend we do not have to use any data type anytime except specific situation. For one example, migrating codes from JavaScript to TypeScript.</p>
+    
+    <h1>
+      <a name="object-data-type" href="#object-data-type" class="anchor">
+      </a>
+      Object data type
+    </h1>
+    
+    <p>TypeScript can define the object data type with <strong>interface</strong>.<br>
+    At first, look at this code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// define object data type with interface.</span>
+    <span class="kr">interface</span> <span class="nx">PokemonObj</span> <span class="p">{</span>
+      <span class="nl">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span>
+      <span class="nx">age</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+      <span class="nx">skill</span><span class="p">:</span> <span class="kr">string</span>
+    <span class="p">}</span>
+    <span class="c1">// assign data type to object.</span>
+    <span class="kd">const</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="nx">PokemonObj</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span>
+      <span class="na">age</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+      <span class="na">skill</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Electric Shock!</span><span class="dl">"</span>
+    <span class="p">}</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>We can use <strong>interface</strong> syntax for creating object data type. And then, assign it to object.<br>
+    If we change data type of object, we get type error like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// define object data type with interface.</span>
+    <span class="kr">interface</span> <span class="nx">PokemonObj</span><span class="p">{</span>
+      <span class="nl">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span>
+      <span class="nx">age</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+      <span class="nx">skill</span><span class="p">:</span> <span class="kr">string</span>
+    <span class="p">}</span>
+    <span class="c1">// assign data type to object.</span>
+    <span class="kd">const</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="nx">PokemonObj</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span>
+      <span class="na">age</span><span class="p">:</span> <span class="dl">"</span><span class="s2">change age</span><span class="dl">"</span><span class="p">,</span>       <span class="c1">// change </span>
+      <span class="na">skill</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Electric Shock!</span><span class="dl">"</span>
+    <span class="p">}</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This is type error message.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight plaintext"><code>typescript.ts:75:3 - error TS2322: Type 'string' is not assignable to type 'number'.
+    
+    75   age: "change age",
+         ~~~
+    
+      typescript.ts:69:3
+        69   age: number,
+             ~~~
+        The expected type comes from property 'age' which is declared here on type 'PokemonObj'
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>We get type error. It is useful to define the data type of object with <strong>interface</strong>. Of course, we can define data type directly like this code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// assign data type directly to object.</span>
+    <span class="kd">const</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="p">{</span><span class="nl">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span> <span class="nx">age</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="nx">skill</span><span class="p">:</span> <span class="kr">string</span><span class="p">}</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span>
+      <span class="na">age</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+      <span class="na">skill</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Electric Shock!</span><span class="dl">"</span>
+    <span class="p">}</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <h1>
+      <a name="array-data-type" href="#array-data-type" class="anchor">
+      </a>
+      Array data type
+    </h1>
+    
+    <p>Array with data type is like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// define array data type</span>
+    <span class="kd">const</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="kr">string</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Raichu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Charizard</span><span class="dl">"</span><span class="p">];</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>If we change the data type, you get type error.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// change array data type</span>
+    <span class="kd">const</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="kr">string</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Raichu</span><span class="dl">"</span><span class="p">,</span> <span class="kc">false</span><span class="p">];</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This is type error message.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight plaintext"><code>typescript.ts:80:49 - error TS2322: Type 'boolean' is not assignable to type 'string'.
+    
+    80 const pokemon: string[] = ["pikachu", "Raichu", false];
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This is so useful and powerful because we do not have to take care of data type of each array elements. By the way, I want to show you another way of expression. This is the same as above code. It looks like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// defined array with another way.</span>
+    <span class="kd">const</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="nb">Array</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Raichu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Charizard</span><span class="dl">"</span><span class="p">];</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>As next data type, I will show you generics data type. This is general data type. After we define generics data type, we can define it. Sample code is like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// defined array with generics data type.</span>
+    <span class="kd">type</span> <span class="nx">Pokemon</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span> <span class="o">=</span> <span class="nx">T</span><span class="p">[];</span>
+    <span class="c1">// After defined generics type, we can define specific data type.</span>
+    <span class="kd">const</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="nx">Pokemon</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Raichu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Charizard</span><span class="dl">"</span><span class="p">];</span>
+    
+    <span class="c1">// Above code is the same as this.</span>
+    <span class="kd">const</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="kr">string</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Raichu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Charizard</span><span class="dl">"</span><span class="p">];</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>We can define some data type with generics data type.<br>
+    This is not good sample but easy to understand how to use generics data type. Sample is like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// defined array with generics data type.</span>
+    <span class="kd">type</span> <span class="nx">Pokemon</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span> <span class="o">=</span> <span class="nx">T</span><span class="p">[];</span>
+    <span class="c1">// After defined generics type, we can define specific data type.</span>
+    <span class="kd">const</span> <span class="nx">pokemon01</span><span class="p">:</span> <span class="nx">Pokemon</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Raichu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Charizard</span><span class="dl">"</span><span class="p">];</span>
+    <span class="kd">const</span> <span class="nx">pokemon02</span><span class="p">:</span> <span class="nx">Pokemon</span><span class="o">&lt;</span><span class="kr">number</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">16</span><span class="p">];</span>
+    <span class="kd">const</span> <span class="nx">pokemon03</span><span class="p">:</span> <span class="nx">Pokemon</span><span class="o">&lt;</span><span class="nx">boolean</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">];</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <h1>
+      <a name="what-is-union" href="#what-is-union" class="anchor">
+      </a>
+      What is union?
+    </h1>
+    
+    <p>If you want to use union data type, you can define multiple data type. Please look at this sample code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="kd">let</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="p">(</span><span class="kr">string</span> <span class="o">|</span> <span class="kr">number</span><span class="p">)</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">;</span>  <span class="c1">// OK</span>
+    <span class="nx">pokemon</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span> 
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This code works correctly because pokemon variable can take string or number data types. But this case is wrong.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="kd">let</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="p">(</span><span class="kr">string</span> <span class="o">|</span> <span class="kr">number</span><span class="p">)</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">;</span>
+    <span class="nx">pokemon</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+    <span class="nx">pokemon</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>      <span class="c1">// NG</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>Because pokemon variable does not take boolean data type and get complied error. If we want to create an array including multiple data type, of course we can use this union data type. This is the sample code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// define data type with array and union</span>
+    <span class="kd">let</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="p">(</span><span class="kr">string</span> <span class="o">|</span> <span class="kr">number</span><span class="p">)[]</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Raichu</span><span class="dl">"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">14</span><span class="p">];</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This code is correctly.<br>
+    But if we add the another data type, we get type error like this.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="c1">// define data type with array and union</span>
+    <span class="kd">let</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="p">(</span><span class="kr">string</span> <span class="o">|</span> <span class="kr">number</span><span class="p">)[]</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Raichu</span><span class="dl">"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="kc">false</span><span class="p">];</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This is type error message.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight plaintext"><code>typescript.ts:105:65 - error TS2322: Type 'boolean' is not assignable to type 'string | number'.
+    
+    105 let pokemon: (string | number)[] = ["pikachu", "Raichu", 6, 14, false];
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>If you want to add multiple data type to the array, you can use this union data type.</p>
+    
+    <h1>
+      <a name="what-is-tupple" href="#what-is-tupple" class="anchor">
+      </a>
+      What is tupple
+    </h1>
+    
+    <p>Tupple is so strict data type.<br>
+    Beginning, you can check this code.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight typescript"><code><span class="kd">let</span> <span class="nx">pokemon</span><span class="p">:</span> <span class="p">[</span><span class="kr">string</span><span class="p">,</span> <span class="kr">number</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">pikachu</span><span class="dl">"</span><span class="p">,</span> <span class="mi">6</span><span class="p">];</span>
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>This code works well. This tupple data type allows only two elements and string and number.<br>
+    I will show you some wrong case below.<br>
+    </p>
+    
+    <div class="highlight js-code-highlight">
+    <pre class="highlight plaintext"><code>
+    typescript.ts:109:36 - error TS2322: Type 'number' is not assignable to type 'string'.
+    
+    109 let pokemon02: [string, number] = [6, "pikachu"];      // NG
+                                           ~
+    
+    typescript.ts:109:39 - error TS2322: Type 'string' is not assignable to type 'number'.
+    
+    109 let pokemon02: [string, number] = [6, "pikachu"];      // NG
+                                              ~~~~~~~~~
+    
+    typescript.ts:110:47 - error TS2322: Type 'string' is not assignable to type 'number'.
+    
+    110 let pokemon03: [string, number] = ["pikachu", "text"]; // NG
+                                                      ~~~~~~
+    
+    typescript.ts:111:5 - error TS2322: Type '[string, number, number]' is not assignable to type '[string, number]'.
+      Source has 3 element(s) but target allows only 2.
+    
+    111 let pokemon04: [string, number] = ["pikachu", 6, 14];  // NG
+    </code></pre>
+    <div class="highlight__panel js-actions-panel">
+    <div class="highlight__panel-action js-fullscreen-code-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+    </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+    </svg>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <p>Tupple is so strict data type. But it is easy to understand what purpose is this array. It means that the array take only two elements. First, value of string data type. Second, value of number data type.</p>
+    
+    <h1>
+      <a name="conclusion" href="#conclusion" class="anchor">
+      </a>
+      Conclusion
+    </h1>
+    
+    <p>In this article, I wrote that basic data type of TypeScript.<br>
+    If you learn typescript, you can check npm packages created by typescript but also write readable and maintained codes.<br>
+    If you belong to the companies, you know many codes exists there. So, you have to read a lot of codes and understand that. TypeScript helps us understand codes!</p>
+    
+    <p>This article is just basic knowledge of typescript.<br>
+    I am planning to write new posts about more typescript data type or React with typescript.<br>
+    If you are interested in this article, please comment to me!</p>
+    
+    <p>Thank your for taking your time to read this article.</p>
+    
